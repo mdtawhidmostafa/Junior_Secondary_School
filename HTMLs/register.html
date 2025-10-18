@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Ecology Theme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidhapith</title>
+    <link rel="shortcut icon" href="/static/images/logoi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@45,700,1,1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <!-- Font awsome CSS -->
+    <link rel="stylesheet" href="/static/css/assets/font-awesome.min.css">    
+
+    <!-- main style-->
+    <link rel="stylesheet" href="/static/css/style.css">  
+    <link rel="stylesheet" href="/static/css/ssstyle.css">
+    <link rel="stylesheet" href="/static/css/about.css">
+    <link rel="stylesheet" href="/static/css/class.css">
+    <link rel="stylesheet" href="/static/css/contact.css">
+    <link rel="stylesheet" href="/static/css/reg.css">
+    <style>
+        /* Add a spinning animation to the spin class */
+        .spin {
+            display: inline-block;
+            animation: spin 2s infinite linear;
+        }
+
+        /* Define the spinning animation */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    
+</head>
+<body> 
+    <script src="/static/js/dbox.js"></script>
+    <h1 class="wels" > Sign Up to Bidhapith </h1>
+    <img src="/static/images/banner/Register.jpg" class="regImg"> 
+    <form method="post"> 
+        {% csrf_token %} 
+        <div class="containers"> 
+            <label id="col" class="nam">Full Name : </label>
+            <input type="text" placeholder="Enter Username" id="name" name="fname" required class="inna">
+            <label id="col" class="naph">Phone Number : </label>
+            <input type="text" placeholder="Enter Phone Number" id="name" name="phonen" required class="inph">
+            <label id="col" class="emals">Email : </label>   
+            <input type="email" placeholder="Enter email" id="email" name="email" required class="inpE"> 
+            <label id="col" class="passw">Password : </label>   
+            <input type="password" placeholder="Enter Password" id="password" name="password" required class="inpP">  
+            <input type="submit" value="Register" name="submit" class="reb">  
+            {% url 'login' as ul %}
+            <p>Already on Bidhapith? <a href="{{ul}}"> LogIn </a> </p> 
+        </div>   
+    </form>   
+    <a id="back-to-top" href="#" class="btn btn-danger btn-circle btn-xl back-to-top" role="button"><span class="material-symbols-outlined">expand_less</span></a>
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/scrol.js"></script> 
+<div class="switch-style">
+    <button onClick="showDiv()" class="switch-button" id="show"><i class="material-icons spin">settings</i></button>
+    <div id="switch-cont">
+        <div class="logo-title">
+            {% url 'home' as ul %}
+            <a href="{{ul}}"><img src="/static/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="Hidden-cont">
+            {% url 'about' as ul %}
+            <a href="{{ul}}" data-toggle="tooltip" data-placement="top" title="Home Style One"><img class="main-image img-fluid" src="/static/demo/about.png" alt="Error !!! picture"/></a>
+            {% url 'Contact' as ul %}
+            <a href="{{ul}}" data-toggle="tooltip" data-placement="top" title="Home Style Two"><img class="main-image img-fluid" src="/static/demo/contact.png" alt="Error !!! picture"/></a>
+            {% url 'class' as ul %}
+            <a href="{{ul}}" data-toggle="tooltip" data-placement="top" title="Home Style Three"><img class="main-image img-fluid" src="/static/demo/class.png" alt="Error !!! picture"/></a>
+            <button onClick="HideDiv()" class="switch-buttons" id="hide"><i class="material-icons spin">settings</i></button>
+        </div>
+    </div>
+</div>
+<script src="/static/js/switch.js"></script>
+</body>
+</html>

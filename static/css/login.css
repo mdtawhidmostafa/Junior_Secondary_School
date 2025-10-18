@@ -1,0 +1,214 @@
+.containerl p{
+   position: absolute;
+   font-family: 'Inter';
+   font-style: normal;
+   color: #000000;
+}      
+
+.impE {     
+    background-color: lightblue; 
+    position: absolute;
+    background: rgba(196, 196, 196, 0.15);
+    border: 3px solid #09941c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px; 
+}  
+
+.impP {    
+    position: absolute;
+    background-color: #FFFFFF;
+    background: rgba(196, 196, 196, 0.15);
+    border: 3px solid #09941c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    box-sizing: border-box; 
+    border-radius: 15px;
+}
+.loin{
+   position: absolute;
+   background: #0A07B8;
+   border-radius: 15px;
+   font-family: 'Inter';
+   font-style: normal;
+   color: #FFFFFF;
+}  
+.wel{
+   position: absolute;
+   font-family: 'Inter';
+   font-style: normal;
+}
+.loin:hover { background-color: #091a0b;}
+@media only screen and (max-width: 600px) {
+   .containerl p{
+      left: 10%;
+      top: 851px;
+      font-weight: 600;
+      font-size: 25px;
+   }      
+   .emal{
+      position: absolute;
+      left: 15%;
+      top: 550px;
+      color: #000000;
+      font-size: 20px;
+   } 
+   .impE {   
+      padding: 1px;   
+      width: 75%;
+      height: 50px;
+      left: 8%;
+      top: 592px;
+   }  
+   .pass{
+      position: absolute;
+      left: 15%;
+      top: 675px;
+      color: #000000;
+      font-size: 20px;
+   } 
+   .impP {   
+       padding: 15px;   
+       width: 75%;
+       height: 60px;
+       left: 8%;
+       top: 715px;
+   }
+   .loin{
+      width: 75%;
+      height: 50px;
+      left:8%;
+      top: 801px;
+      font-weight: 600;
+      font-size: 30px;
+   }  
+   .wel{
+      left: 8%;
+      top: 2%;
+      font-weight: 600;
+      font-size: 40px;
+   }
+   .logImg{
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      left: -20%;
+      top: 20%;
+   }
+}
+@media only screen and (min-width: 600px) {
+   .containerl p{
+      left: 10%;
+      top: 551px;
+      font-weight: 600;
+      font-size: 35px;
+   }      
+   .emal{
+      position: absolute;
+      left: 10%;
+      top: 215px;
+      color: #000000;
+      font-size: 25px;
+   } 
+   .impE {   
+      padding: 5px;   
+      width: 58%;
+      height: 50px;
+      left: 5%;
+      top: 252px;
+   }  
+   .pass{
+      position: absolute;
+      left: 10%;
+      top: 355px;
+      color: #000000;
+      font-size: 25px;
+   } 
+   .impP {   
+       padding: 15px;   
+       width: 60%;
+       height: 60px;
+       left: 5%;
+       top: 398px;
+   }
+   .loin{
+      width: 60%;
+      height: 50px;
+      left:5%;
+      top: 491px;
+      font-weight: 600;
+      font-size: 30px;
+   }  
+   .wel{
+      left: 8%;
+      top: 77px;
+      font-weight: 600;
+      font-size: 50px;
+   }
+   .logImg{
+      position: absolute;
+      width: 600px;
+      height: 630px;
+      left: 40%;
+      top: 30px;
+   }
+}
+@media screen and (min-width: 1024px){
+   .containerl p{
+      width: 454px;
+      height: 61px;
+      left: 400px;
+      top: 641px;
+      font-weight: 600;
+      font-size: 35px;
+   }      
+   .emal{
+      position: absolute;
+      left: 222px;
+      top: 265px;
+      color: #000000;
+      font-size: 25px;
+   } 
+   .impE {   
+       padding: 20px;   
+       width: 685px;
+       height: 22px;
+       left: 212px;
+       top: 302px;
+   }  
+   .pass{
+      position: absolute;
+      left: 222px;
+      top: 405px;
+      color: #000000;
+      font-size: 25px;
+   } 
+   .impP {   
+       padding: 20px;   
+       width: 730px;
+       height: 60px;
+       left: 212px;
+       top: 448px;
+   }
+   .loin{
+      width: 730px;
+      height: 60px;
+      left: 212px;
+      top: 541px;
+      font-weight: 600;
+      font-size: 40px;
+   }  
+   .wel{
+      width: 741px;
+      height: 85px;
+      left: 242px;
+      top: 89px;
+      font-weight: 600;
+      font-size: 60px;
+   }
+   .logImg{
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      left: 675px;
+      top: 4px;
+   }
+}

@@ -1,0 +1,19 @@
+{% extends 'Abase.html' %}
+{% block content %}
+
+<div class="body">
+    <img src="/static/images/banner/Home.png" alt="Error !!! picture" class="bo_img">
+    <div class="title" style=" background: #B570CD;">
+        <h2>Learn different way, enlighten yourself</h2>
+        <p >We will provide the best for you to make yourself well prepared for better future by bringing out the best in you and Our goal is to give an educated nation to the next generation.</p>
+        <ul class="man">
+            {% url 'Aabout' as ul %}
+            <li class="nav-abo {% if request.path == ul%}active{% endif %}" id="coles"><a href="{{ul}}"><b>About</b></a>
+            </li>
+            {% url 'AContact' as ul %}
+            <li class="nav-con" id="coles"><a href="{{ul}}"><b>Contact</b></a>
+            </li>
+        </ul>
+     </div>
+</div>
+{% endblock %} 

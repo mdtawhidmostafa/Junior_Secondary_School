@@ -1,0 +1,62 @@
+{% extends 'Abase.html' %}
+{% block content %}
+
+<div class="cbody" style="position: relative;">
+    <img src="/static/images/banner/science.jpg" alt="Error !!! picture" class="ca_img" style="width: 100%; height: auto;top: -100px;">
+
+    <p style="position: absolute; background: #FD2A2A; font-size: 50px; font-family: 'Inter'; color: white; font-weight: 600; padding: 10px; left: 50%; transform: translateX(-50%); top:-100px;">
+        Welcome to Primary Science
+    </p>   
+
+    <ul class="chapter-list">
+        <li><a href="{% url 's4ch1' %}">Chapter-1</a></li>
+        <li><a href="{% url 's4ch2' %}">Chapter-2</a></li>
+        <li><a href="{% url 's4ch3' %}">Chapter-3</a></li>
+        <li><a href="{% url 's4ch4' %}">Chapter-4</a></li>
+        <li><a href="{% url 's4ch5' %}">Chapter-5</a></li>
+        <li><a href="{% url 's4ch6' %}">Chapter-6</a></li>
+    </ul>
+</div>
+
+<style>
+.cbody {
+    position: relative;
+}
+
+ul.chapter-list {
+    position: absolute;
+    top: 40px;        
+    left: 25%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.chapter-list li {
+    width: 250px; 
+    height: 84px;
+    background: #964BBA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+ul.chapter-list li a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+
+{% endblock %}

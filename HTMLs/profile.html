@@ -1,0 +1,29 @@
+{% extends 'Abase.html' %}
+{% block content %}
+
+<div class="cont" style="background: #CED2F8;">
+    <div class="sectiones" style="background: #CED2F8;">
+        <div class="contentes" >
+            <img src="/static/images/icons/user.png" style="width: 25%;">
+            <ul style="font-size: 48px;line-height: 58px; color: #000000; list-style: none;">
+                <li>{{data.name}}</li>
+            </ul>
+        </div>
+        <div class="user-info" >
+        
+            <ul class="contentes"> 
+                <li><u>Phone Number : </u></li>
+                <li>{{data.phone}}</li>
+                
+            </ul>
+            
+            <ul class="contentes">
+                <li> <u>Email : </u></li>
+                <li>{{data.email}}</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

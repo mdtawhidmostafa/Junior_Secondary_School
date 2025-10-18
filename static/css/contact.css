@@ -1,0 +1,117 @@
+.cont{
+    position: relative;
+    top: -75px;
+    width: 100%;
+    background: #CED2F8;
+    }
+.finds{
+    position:  relative;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+}
+
+.soclink{
+    position: relative;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    background-color: #CED2F8;
+  }
+.soclink img:hover { background-color: #b66f6f;border-radius: 55%;}
+@media only screen and (max-width: 600px) {
+    /*phone*/
+    .finds h1{
+        font-size: 50px;
+        color: #000000;
+    }
+    .finds ul{
+        list-style-type: none;
+        font-size: 19px;
+        line-height: 28px;
+        color: #000000;
+        text-align: center;
+    }
+    .finds { top: 20px;}
+    .soclink { top: 20px;}
+    .soclink p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 58px;
+        text-align: center;
+        color: #000000;
+        }
+    .soclink li{ display: inline-block;padding: 10px 20px; }
+    .soclink img{
+    width: 90px;
+    height: 84px;
+    left: 413px;
+    top: 728px;
+    }
+    }
+@media only screen and (min-width: 600px) {
+    /*tab*/
+    .finds h1{
+        font-size: 75px;
+        color: #000000;
+    }
+    .finds ul{
+        list-style-type: none;
+        font-size: 30px;
+        line-height: 58px;
+        color: #000000;
+    }
+    .soclink p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 58px;
+        text-align: center;
+        color: #000000;
+        }
+    .finds { top: 50px;}
+    .soclink { top: 10px;}
+    .soclink li{ display: inline-block;padding: 7px 14px; }
+    .soclink img{
+    width: 90px;
+    height: 84px;
+    left: 413px;
+    top: 528px;
+    }
+}
+@media screen and (min-width: 1024px){
+    /*pc*/
+    .finds h1{
+        font-size: 80px;
+        color: #000000;
+    }
+    .finds ul{
+        list-style-type: none;
+        font-size: 35px;
+        line-height: 58px;
+        color: #000000;
+    }
+    .finds { top: 70px;}
+    .soclink { top: 40px;}
+    .soclink p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        color: #000000;
+        }
+    .soclink li{ display: inline-block;padding: 10px 20px; }
+    .soclink img{
+    width: 100px;
+    height: 94px;
+    left: 413px;
+    top: 728px;
+    }
+}

@@ -1,0 +1,24 @@
+<a id="back-to-top" href="#" class="btn btn-danger btn-circle btn-xl back-to-top" role="button"><span class="material-symbols-outlined">expand_less</span></a>
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/scrol.js"></script> 
+<div class="switch-style">
+    <button onClick="showDiv()" class="switch-button" id="show"><i class="material-icons spin">settings</i></button>
+    <div id="switch-cont">
+        <div class="logo-title">
+            {% url 'home' as ul %}
+            <a href="{{ul}}"><img src="/static/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="Hidden-cont">
+            {% url 'about' as ul %}
+            <a href="{{ul}}" data-toggle="tooltip" data-placement="top" title="Home Style One"><img class="main-image img-fluid" src="/static/demo/about.png" alt="Error !!! picture"/></a>
+            {% url 'Contact' as ul %}
+            <a href="{{ul}}" data-toggle="tooltip" data-placement="top" title="Home Style Two"><img class="main-image img-fluid" src="/static/demo/contact.png" alt="Error !!! picture"/></a>
+            {% url 'class' as ul %}
+            <a href="{{ul}}" data-toggle="tooltip" data-placement="top" title="Home Style Three"><img class="main-image img-fluid" src="/static/demo/class.png" alt="Error !!! picture"/></a>
+            <button onClick="HideDiv()" class="switch-buttons" id="hide"><i class="material-icons spin">settings</i></button>
+        </div>
+    </div>
+</div>
+<script src="/static/js/switch.js"></script>
+</body>
+</html>

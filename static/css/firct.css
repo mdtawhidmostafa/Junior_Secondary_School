@@ -1,0 +1,211 @@
+     /* Common styles for all devices */
+     .edu_nav .navbar ul {
+        list-style-type: none;
+        height: 150px;
+      }
+      
+      .edu_nav .navbar a {
+        text-decoration: none;
+        padding: 5px 15px;
+        color: #000;
+      }
+      
+      .edu_nav .navbar li {
+        float: right;
+      }
+      
+      .edu_nav .nav-img img {
+        position: absolute;
+      }
+      
+      .edu_nav .navbar .nav-item {
+        background: #FFFFFF;
+        border: 1px solid #7E55D6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+      }
+      
+      .edu_nav #item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 25px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        top: 15%;
+      }
+      
+      .edu_nav .nav-log , .nav-reg {
+        background: #FFFFFF;
+        border: 1px solid #7E55D6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+      }
+      .edu_nav .nav-img img {
+        width: 150px;
+        left: 15%;
+        top: 15px;
+      }
+      .edu_nav .navbar .nav-reg {
+        color: #DF5B63;
+      }
+      .navbar{
+        padding:15px;
+      }
+      .navbar #item {
+        padding:5px;
+      }
+      
+      
+      .navbar .nav-reg {
+        background-color: #DF5B63;
+      }
+      
+      .navbar #item:hover {
+        background-color: #998db3;
+      }
+      
+      .navbar #item a:hover {
+        color: #ffffff;
+      }
+      
+      .navbar .nav-reg a:hover {
+        color: #000;
+      }
+      
+      
+      /* Responsive styles */
+      @media only screen and (min-width: 1200px) {
+        /* Tablet styles */
+        .edu_nav .nav-img img {
+            width: 150px;
+            left: 15%;
+            top: 15px;
+        }
+      
+        .edu_nav .navbar #item {
+            display: block;
+        }
+      
+        .edu_nav .navbar li button {
+            margin-top: 5%;
+        }
+      
+        .nav-drop {
+            display: none;
+        }
+      
+        .dp-cont a {
+            display: none;
+        }
+      
+        .show {
+            display: none;
+        }
+      }
+      .navbar{
+        padding:15px;
+      }
+      .navbar #item {
+        padding:5px;
+      }
+      
+      .navbar .nav-reg {
+        background-color: #DF5B63;
+      }
+      
+      .navbar #item:hover {
+        background-color: #998db3;
+      }
+      
+      .navbar #item a:hover {
+        color: #ffffff;
+      }
+      
+      .navbar .nav-reg a:hover {
+        color: #000;
+      }
+      
+      
+      @media only screen and (max-width: 600px) {
+        /* Mobile styles */
+        .edu_nav .nav-img img {
+            width: 70px;
+            left: 10%;
+            top: 10px;
+        }
+      
+        .edu_nav .navbar {
+            margin-top: 5%;
+            margin-right: 2%;
+            margin-bottom: 5%;
+        }
+      
+        .edu_nav .navbar .nav-item {
+            margin: 10px;
+        }
+      
+        .edu_nav .nav-reg,
+        .edu_nav .nav-log {
+            margin: 10px;
+        }
+        .edu_nav .navbar #item {
+          display: none;
+      }
+      
+        .nav-drop {
+            display: block;
+        }
+      
+        .dp-cont a {
+            display: block;
+        }
+      
+        .show {
+            display: block;
+        }
+      
+        .navbar #item:hover {
+            background-color: #998db3;
+        }
+      
+        .navbar #item a:hover {
+            color: #ffffff;
+        }
+      
+        .navbar .nav-reg a:hover {
+            color: #000;
+        }
+      
+        .body .bo_img {
+            width: 90%;
+            top: 15%;
+        }
+      
+        .body .title {
+            width: 90%;
+            left: 5%;
+            top: 65%;
+            padding-bottom: 47px;
+        }
+      
+        .body .title h2 {
+            font-size: 28px;
+            line-height: 50px;
+        }
+      
+        .body .title p {
+            font-size: 14px;
+            line-height: 26px;
+        }
+      
+        .body .title .man .nav-abo,
+        .body .title .man .nav-con {
+            width: 70px;
+            font-size: 14px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+      }
+      

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="Ecology Theme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidhapith</title>
+    <link rel="shortcut icon" href="/static/images/logoi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@45,700,1,1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="/static/css/assets/font-awesome.min.css">
+    <!-- main style-->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/ssstyle.css">
+    <link rel="stylesheet" href="/static/css/about.css">
+    <link rel="stylesheet" href="/static/css/class.css">
+    <link rel="stylesheet" href="/static/css/contact.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-override.css"> <!-- Custom Bootstrap Overrides -->
+    <style>
+        /* Add a spinning animation to the spin class */
+        .spin {
+            display: inline-block;
+            animation: spin 2s infinite linear;
+        }
+
+        /* Define the spinning animation */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        /* Additional custom styles for your switch button or other elements */
+    </style>
+</head>
+<body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <div class="edu_nav">
+        {% url 'home' as ul %}
+        <a class="nav-img" href="{{ul}}"><img src="/static/images/logo.png" alt="logo"></a>
+        <div class="navbar">
+            <ul>
+                {% url 'reg' as ul %}
+                <li class="nav-reg" id="item"><a href="{{ul}}">Register</a></li>
+                {% url 'login' as ul %}
+                <li class="nav-log" id="item" ><a href="{{ul}}">LogIn</a></li>
+                {% url 'class' as ul %}
+                <li class="nav-item" id="item" ><a href="{{ul}}">Class</a></li>
+                {% url 'home' as ul %}
+                <li class="nav-item" id="item" ><a href="{{ul}}" >Home</a></li>
+                <li>
+                    <div class="nav-drop">
+                        <button class="Prof-m"><i class="material-icons">menu</i></button>
+                        <div class="dp-cont">
+                            <a href="#Home">Home</a>
+                            <a href="class.html">Class</a>
+                            <a href="LogIn.html">LogIn</a>
+                            <a href="Register.html">Register</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <img src="/static/images/banner/Home.png" alt="Error !!! picture" class="bo_img">
+        <div class="title" style=" background: #B570CD;">
+            <h2>Learn different way, enlighten yourself</h2>
+            <p >We will provide the best for you to make yourself well prepared for better future by bringing out the best in you and Our goal is to give an educated nation to the next generation.</p>
+            <ul class="man">
+                {% url 'about' as ul %}
+                <li class="nav-abo {% if request.path == ul%}active{% endif %}" id="coles"><a href="{{ul}}"><b>About</b></a>
+                </li>
+                {% url 'Contact' as ul %}
+                <li class="nav-con" id="coles"><a href="{{ul}}"><b>Contact</b></a>
+                </li>
+            </ul>
+         </div>
+    </div>
+
+
+    <a id="back-to-top" href="#" class="btn btn-danger btn-circle btn-xl back-to-top" role="button"><span class="material-symbols-outlined">expand_less</span></a>
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/scrol.js"></script> 
+
+    <div class="switch-style">
+        <button onClick="showDiv()" class="switch-button" id="show"><i class="material-icons spin">settings</i></button>
+        <div id="switch-cont">
+            <div class="logo-title">
+                <a href="{% url 'home' %}"><img src="/static/images/logo.png" alt="logo"></a>
+            </div>
+            <div class="Hidden-cont">
+                <a href="{% url 'home' %}" data-toggle="tooltip" data-placement="top" title="Home Style One"><img class="main-image img-fluid" src="/static/demo/about.png" alt="Error !!! picture"/></a>
+                <a href="{% url 'Contact' %}" data-toggle="tooltip" data-placement="top" title="Home Style Two"><img class="main-image img-fluid" src="/static/demo/contact.png" alt="Error !!! picture"/></a>
+                <a href="{% url 'class' %}" data-toggle="tooltip" data-placement="top" title="Home Style Three"><img class="main-image img-fluid" src="/static/demo/class.png" alt="Error !!! picture"/></a>
+                <button onClick="HideDiv()" class="switch-buttons" id="hide"><i class="material-icons spin">settings</i></button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/switch.js"></script>
+</body>
+</html>

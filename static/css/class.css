@@ -1,0 +1,254 @@
+/* class page  */
+
+
+
+
+  /* class8*/
+.c4s{
+  position: absolute;
+  width: 250px;
+  height: 84px;
+  left: 920px;
+  top: 70px;
+  background: #964BBA;
+ 
+}
+.c5s{
+  position: absolute;
+  width: 250px;
+  height: 84px;
+  left: 920px;
+  top: 187px;
+  background: #964BBA;
+}
+.c6s{
+  position: absolute;
+  width: 250px;
+  height: 84px;
+  left: 920px;
+  top: 304px;
+  background: #964BBA;
+}
+.c7s{
+  position: absolute;
+  width: 250px;
+  height: 84px;
+  left: 920px;
+  top: 421px;
+  background: #964BBA;
+}
+.c8s{
+  position: absolute;
+  width: 250px;
+  height: 84px;
+  left: 920px;
+  top: 538px;
+  background: #964BBA;
+  margin-bottom: 25px;
+}
+.cla8{
+position: absolute;
+width: 638px;
+height: 50px;
+left: 293px;
+padding: 10px;
+top: 50px;
+background: #FD2A2A;
+text-align: center;
+font-size: 50px;
+color: white;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+}
+
+.vid{
+position: absolute;
+left: 150px;
+padding: 10px;
+top: 100px;
+}
+.row #cla:hover { background-color: #998db3; color: black;}
+
+@media only screen and (max-width: 600px) {
+  .cbody .ca_img{
+      position: absolute;
+      width: 85%;
+      height: 30%;
+      top: 22%;
+  }
+  .c4{
+    position: absolute;
+    width: 110px;
+    height: 54px;
+    left: 65px;
+    top: 370px;
+    background: #964BBA;
+  
+  }
+  .c5{
+    position: absolute;
+    width: 110px;
+    height: 54px;
+    left: 65px;
+    top: 455px;
+    background: #964BBA;
+  }
+  .c6{
+    position: absolute;
+    width: 110px;
+    height: 54px;
+    left: 65px;
+    top: 540px;
+    background: #964BBA;
+  }
+  .c7{
+    position: absolute;
+    width: 110px;
+    height: 54px;
+    left: 65px;
+    top: 627px;
+    background: #964BBA;
+  }
+  .c8{
+    position: absolute;
+    width: 110px;
+    height: 54px;
+    left: 65px;
+    top: 715px;
+    background: #964BBA;
+    margin-bottom: 25px;
+  }
+  #cla {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-left: 20px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cbody .ca_img{
+      position: absolute;
+      width: 95%;
+      height: 85%;
+      top: 25%;
+  }
+  .c4{
+    position: absolute;
+    width: 150px;
+    height: 64px;
+    left: 100px;
+    top: 200px;
+    background: #964BBA;
+  
+  }
+  .c5{
+    position: absolute;
+    width: 150px;
+    height: 64px;
+    left: 100px;
+    top: 302px;
+    background: #964BBA;
+  }
+  .c6{
+    position: absolute;
+    width: 150px;
+    height: 64px;
+    left: 100px;
+    top: 405px;
+    background: #964BBA;
+  }
+  .c7{
+    position: absolute;
+    width: 150px;
+    height: 64px;
+    left: 100px;
+    top: 505px;
+    background: #964BBA;
+  }
+  .c8{
+    position: absolute;
+    width: 150px;
+    height: 64px;
+    left: 100px;
+    top: 605px;
+    background: #964BBA;
+    margin-bottom: 25px;
+  }
+  #cla {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .cbody .ca_img{
+      position: absolute;
+      width: 95%;
+      height: 90%;
+      top: 25%;
+  }
+  .c4{
+    position: absolute;
+    width: 250px;
+    height: 84px;
+    left: 175px;
+    top: 240px;
+    background: #964BBA;
+  }
+  .c5{
+    position: absolute;
+    width: 250px;
+    height: 84px;
+    left: 175px;
+    top: 357px;
+    background: #964BBA;
+  }
+  .c6{
+    position: absolute;
+    width: 250px;
+    height: 84px;
+    left: 175px;
+    top: 474px;
+    background: #964BBA;
+  }
+  .c7{
+    position: absolute;
+    width: 250px;
+    height: 84px;
+    left: 175px;
+    top: 591px;
+    background: #964BBA;
+  }
+  .c8{
+    position: absolute;
+    width: 250px;
+    height: 84px;
+    left: 175px;
+    top: 708px;
+    background: #964BBA;
+    margin-bottom: 25px;
+  }
+  #cla {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-left: 69px;
+  }
+}
